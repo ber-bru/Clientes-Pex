@@ -41,7 +41,7 @@ version = 0.1
 # version.filename = %(source.dir)s/main.py
 
 # (list) Application requirements
-# comma separated e.g. requirements = sqlite3,kivy
+# comma separated e.g. requirements = sqlite3,kivy==2.3.1
 requirements = python3,kivy
 
 # (str) Custom source folders for requirements
@@ -109,7 +109,7 @@ fullscreen = 0
 #android.features = android.hardware.usb.host
 
 # (int) Target Android API, should be as high as possible.
-android.api = 33
+#android.api = 33
 
 # (int) Minimum API your APK / AAB will support.
 #android.minapi = 21
@@ -185,7 +185,7 @@ android.api = 33
 
 # (list) List of Java files to add to the android project (can be java or a
 # directory containing the files)
-android.add_src = assets/fonts
+#android.add_src =
 
 # (list) Android AAR archives to add
 #android.add_aars =
