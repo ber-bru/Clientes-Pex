@@ -21,6 +21,6 @@ class MainApp(App):
 
 
 if __name__ == "__main__":
-    LabelBase.register(name="BalooDa2Bold", fn_regular="BalooDa2-Bold.ttf")
+    LabelBase.register(name="BalooDa2Bold", fn_regular="assets/fonts/BalooDa2-Bold.ttf")
 
     MainApp().run()
