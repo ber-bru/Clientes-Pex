@@ -1,26 +1,18 @@
-from kivy.app import App
-from kivy.core.text import LabelBase
+from kivymd.app import MDApp
 from kivy.lang import Builder
 
-KV = """
-Screen:
+class SampleApp(MDApp):
     
-    FloatLayout:
-        
-        Label:
-            text: "Hello World"
-            font_name: "BalooDa2Bold"
-            pos_hint: {"center_y": .5}
-"""
-
-
-class MainApp(App):
-
     def build(self):
-        return Builder.load_string(KV)
+        self.appKv='''
+MDScreen:
+    MDLabel:
+        text:'Hello,World.'
+        multiline:True
+        color:"blue"
+        halign:'center'         
+'''
+        AppScreen=Builder.load_string(self.appKv)
+        return AppScreen
 
-
-if __name__ == "__main__":
-    LabelBase.register(name="BalooDa2Bold", fn_regular="assets/fonts/BalooDa2-Bold.ttf")
-
-    MainApp().run()
+SampleApp().run()
